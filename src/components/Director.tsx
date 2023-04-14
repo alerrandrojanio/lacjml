@@ -8,8 +8,8 @@ interface DirectorProps {
 
 export function Director({ name, responsability, photo }: DirectorProps) {
   return (
-    <div className="w-full max-w-sm ">
-      <div className="flex flex-col justify-center gap-4 items-center px-1 pb-10 pt-1">
+    <div className="w-full max-w-sm">
+      <div className="flex flex-col justify-center gap-4 items-center px-1 pb-4 pt-1">
         <Image
           src={photo}
           alt={name}

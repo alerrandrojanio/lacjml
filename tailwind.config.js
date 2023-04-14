@@ -12,7 +12,10 @@ module.exports = {
         lac: {
           blue: "#09628E",
           darkblue: "#002447",
-          background: "#F6F6F6",
+          background: {
+            page: "#F6F6F6",
+            units: "#25B5BD",
+          },
         },
       },
       backgroundImage: {},

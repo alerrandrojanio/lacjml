@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import { Navbar } from "@/components/Navbar"
 import { Slide } from "@/components/Slide"
 import { Directory } from "@/components/Directory"
+import { Units } from "@/components/Units"
 
 const inter = Inter({
   weight: ["400", "500", "700"],
@@ -12,11 +13,12 @@ const inter = Inter({
 
 export default function Home() {
   return (
-    <div className={`${inter.variable} h-screen bg-lac-background`}>
+    <div className={`${inter.variable} h-screen `}>
       <Navbar />
       <main className="">
         <Slide />
         <Directory />
+        <Units />
       </main>
     </div>
   )
