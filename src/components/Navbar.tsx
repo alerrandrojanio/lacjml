@@ -32,7 +32,7 @@ export function Navbar() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-gray-500 text-lg font-semibold hover:text-lac-darkblue"
+                  className="text-gray-500 text-lg font-semibold hover:text-lac-blue"
                 >
                   {item.title}
                 </a>
