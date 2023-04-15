@@ -5,6 +5,7 @@ import { Slide } from "@/components/Slide"
 import { Directory } from "@/components/Directory"
 import { Units } from "@/components/Units"
 import { Footer } from "@/components/Footer"
+import { ScrollUpButton } from "@/components/ScrollUpButton"
 
 const inter = Inter({
   weight: ["400", "500", "700"],
@@ -17,6 +18,7 @@ export default function Home() {
     <div className={`${inter.variable} h-screen `}>
       <Navbar />
       <main className="">
+        <ScrollUpButton />
         <Slide />
         <Directory />
         <Units />

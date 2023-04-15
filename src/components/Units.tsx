@@ -4,10 +4,13 @@ import Photo from "../../public/img/directory/pessoa.jpg"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
+
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "swiper/css/scrollbar"
+import "swiper/css/autoplay"
 
 const units = [
   {
@@ -63,9 +66,9 @@ export function Units() {
 
         <div className="w-full px-16 mt-8 max-sm:px-3">
           <Swiper
-            spaceBetween={20}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={30}
             slidesPerView={4}
-            pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{

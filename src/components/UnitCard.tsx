@@ -24,14 +24,14 @@ export function UnitCard({
       <div className="flex flex-col items-center justify-center gap-2">
         <Image src={photo} alt={name} className="rounded-lg" />
 
-        <div className="flex items-center justify-center text-zinc-600 font-semibold text-xl">
+        <div className="flex items-center justify-center text-zinc-600 font-semibold text-xl select-none">
           {name}
         </div>
 
-        <div className="w-full flex flex-col justify-center gap-2 px-8">
+        <div className="w-full flex flex-col justify-center gap-2 px-8 select-none">
           <div className="flex items-center gap-3">
             <RiMapPinFill className="w-6 h-6 text-lac-blue" />
-            <span className="text-lg font-semibold text-zinc-500">
+            <span className="text-lg font-semibold text-zinc-500 ">
               {andress}
             </span>
           </div>

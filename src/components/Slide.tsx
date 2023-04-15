@@ -1,10 +1,14 @@
 "use client"
 import Image from "next/image"
-import { Splide, SplideSlide } from "@splidejs/react-splide"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper"
 
-import "@splidejs/react-splide/css"
-import "@splidejs/react-splide/css/skyblue"
-import "@splidejs/react-splide/css/core"
+// Import Swiper styles
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+import "swiper/css/autoplay"
 
 import SlideTests from "../../public/img/slide/slide-exames.png"
 import SlideCertifications from "../../public/img/slide/slide-certificados.png"
@@ -27,34 +31,36 @@ const slides = [
 
 export function Slide() {
   return (
-    <section className="w-full flex items-center justify-center px-8 py-4 mt-4">
-      <Splide
-        aria-label="Slides LAC"
-        options={{
-          rewind: true,
-          type: "slide",
-          speed: 1000,
-          autoplay: true,
-          interval: 3000,
-        }}
-      >
-        {slides.map((slide) => {
-          return (
-            <SplideSlide
-              key={slide.description}
-              className="flex justify-center items-center"
-            >
-              <Image
-                src={slide.url}
-                width={1200}
-                height={300}
-                alt={slide.description}
-                className="rounded-3xl"
-              />
-            </SplideSlide>
-          )
-        })}
-      </Splide>
+    <section className="w-full flex justify-center px-8 py-4 mt-4 max-sm:px-1">
+      <div className="w-full flex items-center justify-center">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          slidesPerView={1}
+          spaceBetween={20}
+          centeredSlides={true}
+          pagination={true}
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+          className=""
+        >
+          {slides.map((slide) => {
+            return (
+              <SwiperSlide key={slide.description} className="">
+                <Image
+                  src={slide.url}
+                  alt={slide.description}
+                  className="rounded-3xl"
+                />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
     </section>
   )
 }
