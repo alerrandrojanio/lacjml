@@ -29,7 +29,7 @@ const units = [
     andress: "Av Antº. Joaquim de Sousa, 1282",
     photo: Photo,
     tel: "(88) 99296-7335",
-    url_contact: "",
+    url_contact: "https://wa.me/message/EUKB62OGKQ6AD1",
   },
 
   {
@@ -37,7 +37,7 @@ const units = [
     andress: "Av Pedro Correia Leitão, 111",
     photo: Photo,
     tel: "(88) 98198-7424",
-    url_contact: "",
+    url_contact: "https://wa.me/5588981987424",
   },
   {
     name: "Unidade Tamboril",
@@ -51,13 +51,13 @@ const units = [
     andress: "Rua Pedro Carvalhedo, 205",
     photo: Photo,
     tel: "(88) 99968-2166",
-    url_contact: "",
+    url_contact: "https://wa.me/message/RJEHRAAG4NZXF1",
   },
 ]
 
 export function Units() {
   return (
-    <section id="units" className="w-full py-10 bg-lac-background-units ">
+    <section id="units" className="w-full py-10 bg-lac-blue ">
       <div className=" flex flex-col justify-center items-center">
         <h1 className="font-bold text-4xl text-white">Unidades</h1>
 

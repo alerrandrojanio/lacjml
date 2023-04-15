@@ -30,13 +30,13 @@ export function UnitCard({
 
         <div className="w-full flex flex-col justify-center gap-2 px-8">
           <div className="flex items-center gap-3">
-            <RiMapPinFill className="w-6 h-6 text-lac-background-units" />
+            <RiMapPinFill className="w-6 h-6 text-lac-blue" />
             <span className="text-lg font-semibold text-zinc-500">
               {andress}
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <BsFillTelephoneFill className="w-5 h-5 text-lac-background-units" />
+            <BsFillTelephoneFill className="w-5 h-5 text-lac-blue" />
             <span className="text-lg font-semibold text-zinc-500">{tel}</span>
           </div>
         </div>
@@ -44,7 +44,7 @@ export function UnitCard({
         <a
           href={url_contact}
           target="_blank"
-          className="flex items-center justify-center gap-2 py-2 px-3 mt-2 rounded-xl bg-lac-background-units hover:bg-lac-blue"
+          className="flex items-center justify-center gap-2 py-2 px-3 mt-2 rounded-xl bg-lac-blue hover:bg-lac-darkblue"
         >
           <BsWhatsapp className="w-5 h-5 text-white" />
           <span className="text-white font-semibold text-xl">Whatsapp</span>
