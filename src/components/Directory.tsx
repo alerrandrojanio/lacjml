@@ -22,20 +22,22 @@ const directors = [
 
 export function Directory() {
   return (
-    <section className="w-full flex flex-col justify-center items-center mb-8">
-      <h1 className="font-bold text-3xl text-zinc-600 my-9">Diretoria</h1>
+    <section id="directory" className="w-full py-10 ">
+      <div className="flex flex-col justify-center items-center ">
+        <h1 className="font-bold text-4xl text-zinc-600 ">Diretoria</h1>
 
-      <div className="w-full flex flex-row justify-center gap-5 flex-wrap">
-        {directors.map((director) => {
-          return (
-            <Director
-              key={director.name}
-              name={director.name}
-              responsability={director.responsability}
-              photo={director.photo}
-            />
-          )
-        })}
+        <div className="w-full flex flex-row justify-center gap-5 flex-wrap mt-8">
+          {directors.map((director) => {
+            return (
+              <Director
+                key={director.name}
+                name={director.name}
+                responsability={director.responsability}
+                photo={director.photo}
+              />
+            )
+          })}
+        </div>
       </div>
     </section>
   )

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar"
 import { Slide } from "@/components/Slide"
 import { Directory } from "@/components/Directory"
 import { Units } from "@/components/Units"
+import { Footer } from "@/components/Footer"
 
 const inter = Inter({
   weight: ["400", "500", "700"],
@@ -19,6 +20,7 @@ export default function Home() {
         <Slide />
         <Directory />
         <Units />
+        <Footer />
       </main>
     </div>
   )

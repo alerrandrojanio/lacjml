@@ -9,7 +9,7 @@ interface UnitCardProps {
   andress: string
   photo: StaticImageData
   tel: string
-  url_contact: Url
+  url_contact: string
 }
 
 export function UnitCard({
@@ -42,8 +42,9 @@ export function UnitCard({
         </div>
 
         <a
-          href="#"
-          className="flex items-center justify-center gap-2 py-2 px-3 mt-2 rounded-xl bg-lac-background-units hover:bg-lac-darkblue"
+          href={url_contact}
+          target="_blank"
+          className="flex items-center justify-center gap-2 py-2 px-3 mt-2 rounded-xl bg-lac-background-units hover:bg-lac-blue"
         >
           <BsWhatsapp className="w-5 h-5 text-white" />
           <span className="text-white font-semibold text-xl">Whatsapp</span>

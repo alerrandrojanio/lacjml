@@ -7,9 +7,9 @@ import Logo from "../../public/img/lac-logo.svg"
 
 const menu = [
   { title: "Início", href: "#index" },
-  { title: "Diretoria", href: "#index" },
-  { title: "Unidades", href: "#index" },
-  { title: "Certificados", href: "#index" },
+  { title: "Diretoria", href: "#directory" },
+  { title: "Unidades", href: "#units" },
+  { title: "Certificados", href: "#certifications" },
   { title: "Feedback", href: "#index" },
   { title: "Convênios", href: "#index" },
   { title: "Sobre", href: "#index" },
@@ -42,9 +42,9 @@ export function Navbar() {
         </ul>
       </div>
 
-      <div className="flex items-center justify-center gap-6 ">
-        <div>
-          <ul className="flex items-center gap-2 max-md:gap-2">
+      <div className="flex items-center justify-center gap-6">
+        <div className="max-md:hidden">
+          <ul className="flex items-center gap-2 max-md:gap-2 ">
             <li className="bg-lac-blue p-2 rounded-full hover:bg-lac-darkblue">
               <a href="#">
                 <FaFacebookF className="h-4 w-4 text-white max-md:h-3 max-md:w-3" />
